@@ -121,7 +121,7 @@ The default access code and core timing values are defined near the top of `src/
 #define SERVO_LOCKED_PULSE_TICKS         5000U
 #define SERVO_UNLOCKED_PULSE_TICKS       1000U
 #define UNLOCK_DURATION_SECONDS          5U
-#define WATCHDOG_TIMEOUT_SECONDS          10U
+#define WATCHDOG_TIMEOUT_SECONDS         10U
 ```
 
 The default keypad credential is:
