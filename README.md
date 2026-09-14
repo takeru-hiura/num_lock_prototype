@@ -5,7 +5,7 @@ Embedded firmware for a **TM4C123GH6PM-based electronic lock prototype** that co
 The project integrates GPIO, ADC, PWM, UART, interrupts, and the watchdog peripheral through TI TivaWare. It is intended as a compact demonstration of real-time peripheral integration and finite-state control on a resource-constrained microcontroller.
 
 <p align="center">
-  <img src="docs/images/system-architecture.svg" alt="System architecture" width="900">
+  <img src="docs/images/design-flowchart.png" alt="Original system design flowchart" width="900">
 </p>
 
 ## Highlights
@@ -29,7 +29,7 @@ On a successful access attempt, the servo moves to the calibrated unlocked posit
 An active-low IR sensor generates a GPIO falling-edge interrupt. When triggered, the firmware enters the `INTRUDER` state, keeps the lock engaged, illuminates the red LED, and emits an alert over UART. The current prototype intentionally leaves this state latched; a production design would add an authenticated recovery path.
 
 <p align="center">
-  <img src="docs/images/state-machine.svg" alt="Lock controller state machine" width="850">
+  <img src="docs/images/state-flowchart.png" alt="Original state flowchart" width="850">
 </p>
 
 ## Hardware interface
@@ -75,8 +75,8 @@ Application-level constants, pin assignments, thresholds, and timing values are 
     ├── technical-report.pdf
     └── images/
         ├── hardware-schematic.png
-        ├── state-machine.svg
-        └── system-architecture.svg
+        ├── design-flowchart.png
+        └── state-flowchart.png
 ```
 
 ## Documentation
@@ -86,6 +86,8 @@ A detailed design and verification report is available in both GitHub-friendly M
 - [Technical design report](docs/technical-report.md)
 - [Technical design report (PDF)](docs/technical-report.pdf)
 - [Prototype hardware schematic](docs/images/hardware-schematic.png)
+- [Original design flowchart](docs/images/design-flowchart.png)
+- [Original state flowchart](docs/images/state-flowchart.png)
 
 ## Build requirements
 
