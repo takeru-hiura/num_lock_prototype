@@ -84,7 +84,6 @@ Application-level constants, pin assignments, thresholds, and timing values are 
 A detailed design and verification report is available in both GitHub-friendly Markdown and PDF form:
 
 - [Technical design report](docs/technical-report.md)
-- [Technical design report (PDF)](docs/technical-report.pdf)
 - [Prototype hardware schematic](docs/images/hardware-schematic.png)
 - [Original design flowchart](docs/images/design-flowchart.png)
 - [Original state flowchart](docs/images/state-flowchart.png)
